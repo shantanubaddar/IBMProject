@@ -6,7 +6,7 @@ from transformers import pipeline
 import torch
 
 
-loader = PyPDFLoader("/content/Syllabus.pdf")  
+loader = PyPDFLoader("/content/Syllabus.pdf")  ##Could be any filepath
 pages = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
